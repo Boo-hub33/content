@@ -35,7 +35,7 @@ text-underline-position: unset;
 ### Values
 
 - `auto`
-  - : The {{glossary("user agent")}} uses its own algorithm to place the line at or under the alphabetic baseline.
+  - : The {{glossary("user agent")}} uses its own algorithm to place the line at or under the {{glossary("/Baseline/Typography", "alphabetic baseline")}}.
 - `from-font`
   - : If the font file includes information about a preferred position, use that value. If the font file doesn't include this information, behave as if `auto` was set, with the browser choosing an appropriate position.
 - `under`
@@ -55,9 +55,9 @@ text-underline-position: unset;
 
 ## Examples
 
-### A simple example
+### A basic example
 
-Let's take a couple of simple example paragraphs:
+We create two example paragraphs:
 
 ```html
 <p class="horizontal">
@@ -99,7 +99,7 @@ In the text with a vertical [`writing-mode`](/en-US/docs/Web/CSS/writing-mode) s
 
 The live example looks like this:
 
-{{EmbedLiveSample('A_simple_example', '100%', 600)}}
+{{EmbedLiveSample('A_basic_example', '100%', 600)}}
 
 ### Setting text-underline-position globally
 

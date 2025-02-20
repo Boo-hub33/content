@@ -9,7 +9,7 @@ browser-compat: mathml.attribute_values
 
 ## MathML-specific types
 
-In addition to [CSS data types](/en-US/docs/Web/CSS/CSS_Types), some MathML attributes accept the following types:
+In addition to [CSS data types](/en-US/docs/Web/CSS/CSS_Values_and_Units/CSS_data_types), some MathML attributes accept the following types:
 
 - `<unsigned-integer>`: An [`<integer>`](/en-US/docs/Web/CSS/integer), whose first character is neither U+002D HYPHEN-MINUS character (-) nor U+002B PLUS SIGN (+); for example `1234`.
 - `<boolean>`: A string `true` or `false` representing a boolean value.
@@ -46,22 +46,22 @@ veryverythickmathspace => 0.3888888888888889em
 
 ### Constants
 
-| Constant                         | Value     |
-| -------------------------------- | --------- |
-| `veryverythinmathspace`          | 1/18`em`  |
-| `verythinmathspace`              | 2/18`em`  |
-| `thinmathspace`                  | 3/18`em`  |
-| `mediummathspace`                | 4/18`em`  |
-| `thickmathspace`                 | 5/18`em`  |
-| `verythickmathspace`             | 6/18`em`  |
-| `veryverythickmathspace`         | 7/18`em`  |
-| `negativeveryverythinmathspace`  | -1/18`em` |
-| `negativeverythinmathspace`      | -2/18`em` |
-| `negativethinmathspace`          | -3/18`em` |
-| `negativemediummathspace`        | -4/18`em` |
-| `negativethickmathspace`         | -5/18`em` |
-| `negativeverythickmathspace`     | -6/18`em` |
-| `negativeveryverythickmathspace` | -7/18`em` |
+| Constant                         | Value      |
+| -------------------------------- | ---------- |
+| `veryverythinmathspace`          | 1/18 `em`  |
+| `verythinmathspace`              | 2/18 `em`  |
+| `thinmathspace`                  | 3/18 `em`  |
+| `mediummathspace`                | 4/18 `em`  |
+| `thickmathspace`                 | 5/18 `em`  |
+| `verythickmathspace`             | 6/18 `em`  |
+| `veryverythickmathspace`         | 7/18 `em`  |
+| `negativeveryverythinmathspace`  | -1/18 `em` |
+| `negativeverythinmathspace`      | -2/18 `em` |
+| `negativethinmathspace`          | -3/18 `em` |
+| `negativemediummathspace`        | -4/18 `em` |
+| `negativethickmathspace`         | -5/18 `em` |
+| `negativeverythickmathspace`     | -6/18 `em` |
+| `negativeveryverythickmathspace` | -7/18 `em` |
 
 ## Browser compatibility
 

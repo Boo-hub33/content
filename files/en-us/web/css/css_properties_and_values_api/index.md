@@ -57,9 +57,9 @@ CSS.registerProperty({
 <div class="box"><p>Linear gradient with transition</p></div>
 ```
 
-{{EmbedLiveSample("",600,120)}}
+{{EmbedLiveSample("Properties and values API in action",600,120)}}
 
-The box has a [backround](/en-US/docs/Web/CSS/background) consisting of a [linear gradient](/en-US/docs/Web/CSS/gradient/linear-gradient) from `--stop-color` (the custom property) to [`lavenderblush`](/en-US/docs/Web/CSS/named-color).
+The box has a [background](/en-US/docs/Web/CSS/background) consisting of a [linear gradient](/en-US/docs/Web/CSS/gradient/linear-gradient) from `--stop-color` (the custom property) to [`lavenderblush`](/en-US/docs/Web/CSS/named-color).
 The value of `--stop-color` is set to `cornflowerblue` at first, but when you hover over the box, `--stop-color` [transitions](/en-US/docs/Web/CSS/transition) to `aquamarine` over two seconds (`linear-gradient(to right, aquamarine, lavenderblush)`).
 
 ## Reference
@@ -104,7 +104,7 @@ The value of `--stop-color` is set to `cornflowerblue` at first, but when you ho
 
 ## See also
 
-- [CSS cascade and inheritance](/en-US/docs/Web/CSS/CSS_cascade)
+- [CSS cascading and inheritance](/en-US/docs/Web/CSS/CSS_cascade)
 - [CSS scoping](/en-US/docs/Web/CSS/CSS_scoping) module
 - [Using shadow DOM](/en-US/docs/Web/API/Web_components/Using_shadow_DOM)
 - [CSS Painting API](/en-US/docs/Web/API/CSS_Painting_API) module

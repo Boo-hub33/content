@@ -2,13 +2,20 @@
 title: call
 slug: WebAssembly/Reference/Control_flow/call
 page-type: webassembly-instruction
+sidebar: webassemblysidebar
 ---
-
-{{WebAssemblySidebar}}
 
 **`call`** calls a function, `return_call` being the tail-call version of it. `call_indirect` calls a function in a table with the `return_call_indirect` tail-call version as well.
 
+## Examples
+
+Calling the `greet` function imported from JavaScript using `call`:
+
 {{EmbedInteractiveExample("pages/wat/call.html", "tabbed-standard")}}
+
+Calculating factorial for a number using `return_call` and logging the result using the exported `fac` function:
+
+{{EmbedInteractiveExample("pages/wat/return_call.html", "tabbed-standard")}}
 
 ## Syntax
 

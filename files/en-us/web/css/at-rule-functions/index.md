@@ -6,7 +6,7 @@ page-type: guide
 
 {{CSSRef}}
 
-**[CSS](/en-US/docs/Web/CSS) [at-rule](/en-US/docs/Web/CSS/At-rule) functions** are at-rule statements that represent complex rules or can invoke special data processing or calculations.
+**[CSS](/en-US/docs/Web/CSS) [at-rule](/en-US/docs/Web/CSS/CSS_syntax/At-rule) functions** are at-rule statements that represent complex rules or can invoke special data processing or calculations.
 
 ## Syntax
 
@@ -25,8 +25,6 @@ The {{CSSxRef("@import")}} at-rule is used to import styles from other styleshee
 
 - {{CSSxRef("@import", "@import url()")}}
   - : Imports a stylesheet file from the specified URL.
-- {{CSSxRef("@import", "@import src()")}}
-  - : Imports a stylesheet file from the specified source.
 - {{CSSxRef("@import", "@import supports()")}}
   - : Imports a stylesheet file based on browser support.
 - {{CSSxRef("@import", "@import layer()")}}
@@ -49,8 +47,6 @@ The {{CSSxRef("@namespace")}} at-rule is used to specify XML namespaces to be us
 
 - {{CSSxRef("@namespace", "@namespace url()")}}
   - : Defines XML namespace from the specified URL.
-- {{CSSxRef("@namespace", "@namespace src()")}}
-  - : Defines XML namespace from the specified source.
 
 ## @container functions
 

@@ -9,7 +9,18 @@ browser-compat: javascript.functions.method_definitions
 
 **Method definition** is a shorter syntax for defining a function property in an object initializer. It can also be used in [classes](/en-US/docs/Web/JavaScript/Reference/Classes).
 
-{{EmbedInteractiveExample("pages/js/functions-definitions.html")}}
+{{InteractiveExample("JavaScript Demo: Functions Definitions")}}
+
+```js interactive-example
+const obj = {
+  foo() {
+    return "bar";
+  },
+};
+
+console.log(obj.foo());
+// Expected output: "bar"
+```
 
 ## Syntax
 
@@ -219,6 +230,7 @@ const obj2 = {
 ### Async generator methods
 
 ```js
+// Using a named property
 const obj = {
   f: async function* () {
     yield 1;

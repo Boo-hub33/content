@@ -2,20 +2,22 @@
 title: color-interpolation
 slug: Web/SVG/Attribute/color-interpolation
 page-type: svg-attribute
-browser-compat: svg.attributes.presentation.color-interpolation
+browser-compat: svg.global_attributes.color-interpolation
 ---
 
 {{SVGRef}}
 
 The **`color-interpolation`** attribute specifies the color space for gradient interpolations, color animations, and alpha compositing.
 
-> **Note:** For filter effects, the {{SVGAttr("color-interpolation-filters")}} property controls which color space is used.
+> [!NOTE]
+> For filter effects, the {{SVGAttr("color-interpolation-filters")}} property controls which color space is used.
 
-The color-interpolation property chooses between color operations occurring in the sRGB color space or in a (light energy linear) linearized RGB color space. Having chosen the appropriate color space, component-wise linear interpolation is used.
+The `color-interpolation` property chooses between color operations occurring in the sRGB color space or in a (light energy linear) linearized RGB color space. Having chosen the appropriate color space, component-wise linear interpolation is used.
 
 When a child element is blended into a background, the value of the `color-interpolation` property on the child determines the type of blending, not the value of the `color-interpolation` on the parent. For gradients which make use of the {{SVGAttr("href")}} or the deprecated {{SVGAttr("xlink:href")}} attribute to reference another gradient, the gradient uses the property's value from the gradient element which is directly referenced by the {{SVGAttr("fill")}} or {{SVGAttr("stroke")}} property. When animating colors, color interpolation is performed according to the value of the `color-interpolation` property on the element being animated.
 
-> **Note:** As a presentation attribute, {{CSSXref("color-interpolation")}} can be used as a CSS property.
+> [!NOTE]
+> As a presentation attribute, `color-interpolation` also has a CSS property counterpart: {{cssxref("color-interpolation")}}. When both are specified, the CSS property takes priority.
 
 You can use this attribute with the following SVG elements:
 
@@ -72,7 +74,7 @@ You can use this attribute with the following SVG elements:
 - `sRGB`
   - : Indicates that color interpolation should occur in the sRGB color space.
 - `linearRGB`
-  - : Indicates that color interpolation should occur in the linearized RGB color space as described in [the sRGB specification](https://webstore.iec.ch/publication/6169).
+  - : Indicates that color interpolation should occur in the linearized RGB color space as described in [the sRGB specification](https://webstore.iec.ch/en/publication/6169).
 
 ## Example
 
@@ -167,7 +169,7 @@ In this fourth SVG, the `color-interpolation` attribute is included on the `<rad
 ```html
 <svg width="450" height="70">
   <title>
-    Example of linearGradient using the color-interpolation attribute
+    Example of radialGradient using the color-interpolation attribute
   </title>
   <defs>
     <radialGradient id="radLinearRGB" color-interpolation="linearRGB">
@@ -183,7 +185,7 @@ In this fourth SVG, the `color-interpolation` attribute is included on the `<rad
     fill="url(#radLinearRGB)"
     stroke="black" />
   <text x="0" y="60" font-family="courier" font-size="16">
-    color-interpolation="sRGB" (SVG attr)
+    color-interpolation="linearRGB" (SVG attr)
   </text>
 </svg>
 ```
@@ -202,7 +204,7 @@ In this fourth SVG, the `color-interpolation` attribute is included on the `<rad
 
 - {{SVGElement("linearGradient")}}
 - {{SVGElement("radialGradient")}}
-- {{CSSXref("color-interpolation")}}
-- [sRGB specification](https://webstore.iec.ch/publication/6169)
+- CSS {{cssxref("color-interpolation")}} property
+- [sRGB specification](https://webstore.iec.ch/en/publication/6169)
 - {{SVGAttr("color-interpolation-filters")}}
 - [Computer color is broken](https://www.youtube.com/watch?v=LKnqECcg6Gw) - popular demonstration of linearRGB

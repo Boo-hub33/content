@@ -123,7 +123,7 @@ In an SVG document, the viewport is the visible area of the SVG image. You can s
 <svg height="300" width="400"></svg>
 ```
 
-In this example, the viewport has an aspect ratio of 3:4 and is, by default, 400 by 300 units, with a unit generally being a CSS pixel.
+In this example, the viewport has an {{glossary("aspect ratio")}} of 3:4 and is, by default, 400 by 300 units, with a unit generally being a CSS pixel.
 
 SVG also has an internal coordinate system defined via the [viewBox](/en-US/docs/Web/SVG/Attribute/viewBox) attribute, which is not related to this viewport discussion.
 
@@ -143,7 +143,7 @@ The [Visual Viewport API](/en-US/docs/Web/API/Visual_Viewport_API) provides a me
 
 ## Mobile Viewports
 
-Mobile devices come in all shapes and sizes, with screens of differing device pixel ratios. The mobile browser's viewport is the area of the window in which web content can be seen, which is not necessarily the same size as the rendered page. Mobile browsers render pages in a virtual window or viewport, generally at 980px, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. Users can then pan and zoom to see different areas of the page. For example, if a mobile screen has a width of 320px, a website might be rendered with a virtual viewport of 980px, and then it will be shrunk down to fit into the 320px space, which, depending on the design, is illegible for many if not everyone. To tell a mobile browser to use the viewport width instead of the default 980px as the width of the screen, developers can include a viewport meta tag, like the following:
+Mobile devices come in all shapes and sizes, with screens of differing {{glossary("device pixel")}} ratios. The mobile browser's viewport is the area of the window in which web content can be seen, which is not necessarily the same size as the rendered page. Mobile browsers render pages in a virtual window or viewport, generally at 980px, which is usually wider than the screen, and then shrink the rendered result down so it can all be seen at once. Users can then pan and zoom to see different areas of the page. For example, if a mobile screen has a width of 320px, a website might be rendered with a virtual viewport of 980px, and then it will be shrunk down to fit into the 320px space, which, depending on the design, is illegible for many if not everyone. To tell a mobile browser to use the viewport width instead of the default 980px as the width of the screen, developers can include a viewport meta tag, like the following:
 
 ```html
 <meta name="viewport" content="width=device-width" />
