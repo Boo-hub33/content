@@ -8,11 +8,9 @@ browser-compat:
 spec-urls: https://w3c.github.io/web-locks/
 ---
 
-{{DefaultAPISidebar("Web Locks API")}}{{securecontext_header}}
+{{DefaultAPISidebar("Web Locks API")}}{{securecontext_header}} {{AvailableInWorkers}}
 
 The **Web Locks API** allows scripts running in one tab or worker to asynchronously acquire a lock, hold it while work is performed, then release it. While held, no other script executing in the same origin can acquire the same lock, which allows a web app running in multiple tabs or workers to coordinate work and the use of resources.
-
-{{AvailableInWorkers}}
 
 ## Concepts and Usage
 
@@ -85,17 +83,13 @@ For more complicated cases, such as holding the lock for an arbitrary amount of 
 
 ```js
 // Capture promise control functions:
-let resolve, reject;
-const p = new Promise((res, rej) => {
-  resolve = res;
-  reject = rej;
-});
+const { promise, resolve, reject } = Promise.withResolvers();
 
 // Request the lock:
 navigator.locks.request(
   "my_resource",
   // Lock is acquired.
-  (lock) => p, // Now lock will be held until either resolve() or reject() is called.
+  (lock) => promise, // Now lock will be held until either resolve() or reject() is called.
 );
 ```
 

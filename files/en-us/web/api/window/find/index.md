@@ -10,7 +10,8 @@ browser-compat: api.Window.find
 
 {{ApiRef}}{{Non-standard_Header}}
 
-> **Note:** Support for `Window.find()` might change in future
+> [!NOTE]
+> Support for `Window.find()` might change in future
 > versions of Gecko. See [Firefox bug 672395](https://bugzil.la/672395).
 
 The **`Window.find()`** method finds a string in a window sequentially.
@@ -35,6 +36,8 @@ find(aString, aCaseSensitive, aBackwards, aWrapAround, aWholeWord, aSearchInFram
   - : A boolean value. If `true`, specifies a whole word search.
 - `aSearchInFrames`
   - : A boolean value. If `true`, specifies a search in frames.
+- `aShowDialog`
+  - : A boolean value. If `true`, a search dialog is shown.
 
 ### Return value
 

@@ -13,8 +13,8 @@ Firefox 20 was released on April, 2nd 2013. This article provides information ab
 ### HTML
 
 - Support for the [`download`](/en-US/docs/Web/HTML/Element/a#download) attribute on the {{HTMLElement("a")}} and {{HTMLElement("area")}} element has been added ([Firefox bug 676619](https://bugzil.la/676619)).
-- The value `auto` for the [global attribute](/en-US/docs/Web/HTML/Global_attributes) [`dir`](/en-US/docs/Web/HTML/Global_attributes#dir) has been implemented ([Firefox bug 548206](https://bugzil.la/548206)).
-- The [global attribute](/en-US/docs/Web/HTML/Global_attributes) [contextmenu](/en-US/docs/Web/HTML/Global_attributes/contextmenu) now works on Firefox for Android ([Firefox bug 736321](https://bugzil.la/736321)).
+- The value `auto` for the [global attribute](/en-US/docs/Web/HTML/Global_attributes) [`dir`](/en-US/docs/Web/HTML/Global_attributes/dir) has been implemented ([Firefox bug 548206](https://bugzil.la/548206)).
+- The [global attribute](/en-US/docs/Web/HTML/Global_attributes) `contextmenu` now works on Firefox for Android ([Firefox bug 736321](https://bugzil.la/736321)).
 
 ### JavaScript
 
@@ -47,7 +47,7 @@ Firefox 20 was released on April, 2nd 2013. This article provides information ab
 - The third, optional, `transfer` argument of {{domxref("Window.postMessage")}} is now supported. It allows to transfer a sequence of [transferable objects](/en-US/docs/Web/API/Web_Workers_API/Transferable_objects) to the destination ([Firefox bug 822094](https://bugzil.la/822094)).
 - The non-standard {{domxref("Window.sizeToContent()")}} method now clamps the minimal size: the window cannot be forced anymore to small sizes preventing the user from interacting with ([Firefox bug 764240](https://bugzil.la/764240)).
 - Blend modes, such as `overlay`, `color-burn`, `hue`, etc. have been added to the Canvas {{domxref("CanvasRenderingContext2D.globalCompositeOperation")}} property ([Firefox bug 748433](https://bugzil.la/748433)).
-- The prefixed version of [`window.indexedDB`](/en-US/docs/Web/API/indexedDB) — `window.mozIndexedDB` — was reintroduced to Gecko, so that bad cross-browser prefixing code (such as `var indexedDB = window.indexedDB || window.webkitIndexedDB …`) doesn't break in Firefox. A better approach is `window.indexedDB = window.indexedDB || window.webkitIndexedDB …` (see [Firefox bug 770844](https://bugzil.la/770844).)
+- The prefixed version of [`window.indexedDB`](/en-US/docs/Web/API/Window/indexedDB) — `window.mozIndexedDB` — was reintroduced to Gecko, so that bad cross-browser prefixing code (such as `var indexedDB = window.indexedDB || window.webkitIndexedDB …`) doesn't break in Firefox. A better approach is `window.indexedDB = window.indexedDB || window.webkitIndexedDB …` (see [Firefox bug 770844](https://bugzil.la/770844).)
 
 ### SVG
 
@@ -61,7 +61,7 @@ Firefox 20 was released on April, 2nd 2013. This article provides information ab
 
 ## Changes for add-on and Mozilla developers
 
-- EcmaScript for XML (E4X) is now fully disabled for all chrome and content scripts. It was previously disabled for content in Firefox 17 and has been removed entirely for Firefox 21. Use DOMParser/DOMSerializer or a non-native JXON algorithm instead.
+- ECMAScript for XML (E4X) is now fully disabled for all chrome and content scripts. It was previously disabled for content in Firefox 17 and has been removed entirely for Firefox 21. Use DOMParser/DOMSerializer or a non-native JXON algorithm instead.
 - The `nsIDOMParserJS` interface no longer exists ([Firefox bug 816410](https://bugzil.la/816410)). See `nsIDOMParser` for alternatives.
 - Content Preferences: The `nsIContentPrefService` interface is now deprecated and the asynchronous `nsIContentPrefService2` storage API has been implemented.
 - The `nsIProfile` and `nsIProfileChangeStatus` interfaces have been removed, along with other code supporting the pre-Firefox profile management system. You probably weren't using these interfaces, but if you were, you should stop doing so. This prevents defunct parts of the profile management system from vetoing the shutdown process.
@@ -74,4 +74,4 @@ Firefox 20 was released on April, 2nd 2013. This article provides information ab
 
 ### Older versions
 
-{{Firefox_for_developers('19')}}
+{{Firefox_for_developers}}

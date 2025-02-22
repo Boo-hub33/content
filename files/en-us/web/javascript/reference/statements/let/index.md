@@ -9,7 +9,21 @@ browser-compat: javascript.statements.let
 
 The **`let`** declaration declares re-assignable, block-scoped local variables, optionally initializing each to a value.
 
-{{EmbedInteractiveExample("pages/js/statement-let.html")}}
+{{InteractiveExample("JavaScript Demo: Statement - Let")}}
+
+```js interactive-example
+let x = 1;
+
+if (x === 1) {
+  let x = 2;
+
+  console.log(x);
+  // Expected output: 2
+}
+
+console.log(x);
+// Expected output: 1
+```
 
 ## Syntax
 
@@ -94,11 +108,13 @@ The term "temporal" is used because the zone depends on the order of execution (
 }
 ```
 
-Using the `typeof` operator for a `let` variable in its TDZ will throw a {{jsxref("ReferenceError")}}:
+Using the `typeof` operator for a variable in its TDZ will throw a {{jsxref("ReferenceError")}}:
 
 ```js example-bad
-typeof i; // ReferenceError: Cannot access 'i' before initialization
-let i = 10;
+{
+  typeof i; // ReferenceError: Cannot access 'i' before initialization
+  let i = 10;
+}
 ```
 
 This differs from using `typeof` for undeclared variables, and variables that hold a value of `undefined`:

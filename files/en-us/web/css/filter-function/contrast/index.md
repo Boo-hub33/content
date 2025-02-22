@@ -7,7 +7,7 @@ browser-compat: css.types.filter-function.contrast
 
 {{CSSRef}}
 
-The **`contrast()`** [CSS](/en-US/docs/Web/CSS) [function](/en-US/docs/Web/CSS/CSS_Functions) adjusts the contrast of the input image. Its result is a {{cssxref("&lt;filter-function&gt;")}}.
+The **`contrast()`** [CSS](/en-US/docs/Web/CSS) [function](/en-US/docs/Web/CSS/CSS_Values_and_Units/CSS_Value_Functions) adjusts the contrast of the input image. Its result is a {{cssxref("&lt;filter-function&gt;")}}.
 
 {{EmbedInteractiveExample("pages/css/function-contrast.html")}}
 
@@ -38,9 +38,9 @@ contrast(2)  /* Double contrast */
 contrast(200%)
 ```
 
-### Formal syntax
+## Formal syntax
 
-{{csssyntax}}
+{{CSSSyntax}}
 
 ## Examples
 
@@ -125,7 +125,7 @@ p {
 
 ### With url() and the SVG contrast filter
 
-The SVG {{SVGElement("filter")}} element is used to define custom filter effects that can then be referenced by [`id`](/en-US/docs/Web/HTML/Global_attributes#id). The `<filter>`'s {{SVGElement("feComponentTransfer")}} primitive enables pixel-level color remapping. Given the following:
+The SVG {{SVGElement("filter")}} element is used to define custom filter effects that can then be referenced by [`id`](/en-US/docs/Web/HTML/Global_attributes/id). The `<filter>`'s {{SVGElement("feComponentTransfer")}} primitive enables pixel-level color remapping. Given the following:
 
 ```svg
   <filter id="contrast">
@@ -165,10 +165,16 @@ This example shows three images: the image with a `contrast()` filter function a
   <tbody>
     <tr>
       <td>
-        <img style="filter: contrast(200%)" src="flag.jpg" alt="Pride flag" />
+        <img
+          style="filter: contrast(200%)"
+          src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+          alt="Pride flag" />
       </td>
       <td>
-        <img class="svgFilterLive" src="flag.jpg" alt="Pride flag" />
+        <img
+          class="svgFilterLive"
+          src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+          alt="Pride flag" />
         <svg
           xmlns="http://www.w3.org/2000/svg"
           id="svg"
@@ -187,7 +193,9 @@ This example shows three images: the image with a `contrast()` filter function a
         </svg>
       </td>
       <td>
-        <img src="flag.jpg" alt="Pride flag" />
+        <img
+          src="https://mdn.github.io/shared-assets/images/examples/progress-pride-flag.jpg"
+          alt="Pride flag" />
       </td>
     </tr>
   </tbody>

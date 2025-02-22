@@ -4,7 +4,7 @@ slug: Web/Accessibility/Understanding_WCAG/Perceivable/Color_contrast
 page-type: guide
 ---
 
-{{QuicklinksWithSubPages("Web/Accessibility/Understanding_WCAG")}}
+{{AccessibilitySidebar}}
 
 The [color contrast](https://www.w3.org/TR/WCAG21/#dfn-contrast-ratio) between background and foreground content (that is, usually text) should be great enough to ensure legibility.
 
@@ -134,6 +134,6 @@ You can also check color contrast on the fly using Firefox's Developer Tools —
 
 ## See also
 
-- [Color and color contrast](/en-US/docs/Learn/Accessibility/CSS_and_JavaScript#color_and_color_contrast)
-- [Multiple labels](/en-US/docs/Learn/Forms/How_to_structure_a_web_form#multiple_labels)
+- [Color and color contrast](/en-US/docs/Learn_web_development/Core/Accessibility/CSS_and_JavaScript#color_and_color_contrast)
+- [Multiple labels](/en-US/docs/Learn_web_development/Extensions/Forms/How_to_structure_a_web_form#multiple_labels)
 - [Understanding Non-Text Contrast](https://www.w3.org/WAI/WCAG21/Understanding/non-text-contrast.html)

@@ -47,6 +47,10 @@ This article provides information about the changes in Firefox 122 that affect d
 
 - The {{domxref("HTMLSelectElement.showPicker()")}} method is now supported, allowing the browser picker for a {{HTMLElement("select")}} element to be programmatically launched when triggered by user interaction ([Firefox bug 1865207](https://bugzil.la/1865207)).
 
+#### Removals
+
+- Removed support for the CSS [`-moz-user-focus`](/en-US/docs/Web/CSS/-moz-user-focus) property ([Firefox bug 1871745](https://bugzil.la/1871745) and [Firefox bug 1868552](https://bugzil.la/1868552)).
+
 ### WebDriver conformance (WebDriver BiDi, Marionette)
 
 #### General
@@ -86,7 +90,7 @@ These features are newly shipped in Firefox 122 but are disabled by default. To 
 
 - **Clipboard read and write:** `dom.events.asyncClipboard.clipboardItem`, `dom.events.asyncClipboard.readText` and `dom.events.asyncClipboard.writeText`.
 
-  The async {{domxref('Clipboard API')}} is now fully supported, including [`read()`](/en-US/docs/Web/API/Clipboard/read), [`readText()`](/en-US/docs/Web/API/Clipboard/readText), and [`write()`](/en-US/docs/Web/API/Clipboard/write) methods and the {{domxref('ClipboardItem')}} interface. A paste context menu will appear for the user to confirm when reading clipboard data not provided by the same-origin page. ([Firefox bug 1809106](https://bugzil.la/1809106))
+  The async [Clipboard API](/en-US/docs/Web/API/Clipboard_API) is now fully supported, including [`read()`](/en-US/docs/Web/API/Clipboard/read), [`readText()`](/en-US/docs/Web/API/Clipboard/readText), and [`write()`](/en-US/docs/Web/API/Clipboard/write) methods and the {{domxref('ClipboardItem')}} interface. A paste context menu will appear for the user to confirm when reading clipboard data not provided by the same-origin page. ([Firefox bug 1809106](https://bugzil.la/1809106))
 
 - **`Intl.Segmenter`:** enabled by default only in Firefox Nightly.
 
@@ -94,4 +98,4 @@ These features are newly shipped in Firefox 122 but are disabled by default. To 
 
 ## Older versions
 
-{{Firefox_for_developers(121)}}
+{{Firefox_for_developers}}

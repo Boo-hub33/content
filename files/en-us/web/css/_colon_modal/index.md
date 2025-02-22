@@ -1,5 +1,5 @@
 ---
-title: ":modal"
+title: :modal
 slug: Web/CSS/:modal
 page-type: css-pseudo-class
 browser-compat: css.selectors.modal
@@ -30,10 +30,10 @@ Examples of elements that will prevent user interaction with the rest of the pag
 
 ### Styling a modal dialog
 
-This example styles a modal dialog that opens when the "Update details" button is activated. This example has been built on top of the {{HTMLElement("dialog")}} element [example](/en-US/docs/Web/HTML/Element/dialog#advanced_example).
+This example styles a modal dialog that opens when the "Update details" button is activated. This example has been built on top of the {{HTMLElement("dialog")}} element [example](/en-US/docs/Web/HTML/Element/dialog#handling_the_return_value_from_the_dialog).
 
 ```html hidden
-<!-- Simple modal dialog containing a form -->
+<!-- Basic modal dialog containing a form -->
 <dialog id="favDialog">
   <form method="dialog">
     <p>

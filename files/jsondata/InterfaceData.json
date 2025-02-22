@@ -56,6 +56,10 @@
       "inh": "",
       "impl": []
     },
+    "AnimationTrigger": {
+      "inh": "",
+      "impl": []
+    },
     "AnimationWorkletGlobalScope": {
       "inh": "WorkletGlobalScope",
       "impl": []
@@ -376,6 +380,10 @@
       "inh": "AudioNode",
       "impl": []
     },
+    "ChapterInformation": {
+      "inh": "",
+      "impl": []
+    },
     "CharacterBoundsUpdateEvent": {
       "inh": "Event",
       "impl": []
@@ -528,6 +536,10 @@
       "inh": "CSSRule",
       "impl": []
     },
+    "CSSFontFaceDescriptors": {
+      "inh": "CSSStyleDeclaration",
+      "impl": []
+    },
     "CSSFontFaceRule": {
       "inh": "CSSRule",
       "impl": []
@@ -542,6 +554,18 @@
     },
     "CSSFontPaletteValuesRule": {
       "inh": "CSSRule",
+      "impl": []
+    },
+    "CSSFunctionDeclarations": {
+      "inh": "CSSRule",
+      "impl": []
+    },
+    "CSSFunctionDescriptors": {
+      "inh": "CSSStyleDeclaration",
+      "impl": []
+    },
+    "CSSFunctionRule": {
+      "inh": "CSSGroupingRule",
       "impl": []
     },
     "CSSGroupingRule": {
@@ -640,6 +664,10 @@
       "inh": "CSSRule",
       "impl": []
     },
+    "CSSNestedDeclarations": {
+      "inh": "CSSRule",
+      "impl": []
+    },
     "CSSNumericArray": {
       "inh": "",
       "impl": []
@@ -654,6 +682,10 @@
     },
     "CSSOKLCH": {
       "inh": "CSSColorValue",
+      "impl": []
+    },
+    "CSSPageDescriptors": {
+      "inh": "CSSStyleDeclaration",
       "impl": []
     },
     "CSSPageRule": {
@@ -692,8 +724,12 @@
       "inh": "CSSTransformComponent",
       "impl": []
     },
-    "CSSPositionFallbackRule": {
-      "inh": "CSSGroupingRule",
+    "CSSPositionTryDescriptors": {
+      "inh": "CSSStyleDeclaration",
+      "impl": []
+    },
+    "CSSPositionTryRule": {
+      "inh": "CSSRule",
       "impl": []
     },
     "CSSPropertyRule": {
@@ -748,6 +784,10 @@
       "inh": "",
       "impl": []
     },
+    "CSSStyleProperties": {
+      "inh": "CSSStyleDeclaration",
+      "impl": []
+    },
     "CSSStyleRule": {
       "inh": "CSSGroupingRule",
       "impl": []
@@ -778,10 +818,6 @@
     },
     "CSSTranslate": {
       "inh": "CSSTransformComponent",
-      "impl": []
-    },
-    "CSSTryRule": {
-      "inh": "CSSRule",
       "impl": []
     },
     "CSSUnitValue": {
@@ -840,8 +876,16 @@
       "inh": "AudioNode",
       "impl": []
     },
+    "DelegatedInkTrailPresenter": {
+      "inh": "",
+      "impl": []
+    },
     "DeprecationReportBody": {
       "inh": "ReportBody",
+      "impl": []
+    },
+    "DeviceChangeEvent": {
+      "inh": "Event",
       "impl": []
     },
     "DeviceMotionEvent": {
@@ -862,6 +906,10 @@
     },
     "DevicePosture": {
       "inh": "EventTarget",
+      "impl": []
+    },
+    "DigitalCredential": {
+      "inh": "Credential",
       "impl": []
     },
     "DigitalGoodsService": {
@@ -1196,6 +1244,10 @@
       "inh": "",
       "impl": []
     },
+    "ForDebuggingOnly": {
+      "inh": "",
+      "impl": []
+    },
     "FormData": {
       "inh": "",
       "impl": []
@@ -1414,6 +1466,18 @@
     },
     "Gyroscope": {
       "inh": "Sensor",
+      "impl": []
+    },
+    "HandwritingDrawing": {
+      "inh": "",
+      "impl": []
+    },
+    "HandwritingRecognizer": {
+      "inh": "",
+      "impl": []
+    },
+    "HandwritingStroke": {
+      "inh": "",
       "impl": []
     },
     "HashChangeEvent": {
@@ -1860,10 +1924,6 @@
       "inh": "",
       "impl": []
     },
-    "InkPresenter": {
-      "inh": "",
-      "impl": []
-    },
     "InputDeviceCapabilities": {
       "inh": "",
       "impl": []
@@ -1876,12 +1936,20 @@
       "inh": "UIEvent",
       "impl": []
     },
+    "InstallEvent": {
+      "inh": "ExtendableEvent",
+      "impl": []
+    },
     "Instance": {
       "inh": "",
       "impl": []
     },
-    "InterestGroupBiddingScriptRunnerGlobalScope": {
+    "InterestGroupBiddingAndScoringScriptRunnerGlobalScope": {
       "inh": "InterestGroupScriptRunnerGlobalScope",
+      "impl": []
+    },
+    "InterestGroupBiddingScriptRunnerGlobalScope": {
+      "inh": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",
       "impl": []
     },
     "InterestGroupReportingScriptRunnerGlobalScope": {
@@ -1889,7 +1957,7 @@
       "impl": []
     },
     "InterestGroupScoringScriptRunnerGlobalScope": {
-      "inh": "InterestGroupScriptRunnerGlobalScope",
+      "inh": "InterestGroupBiddingAndScoringScriptRunnerGlobalScope",
       "impl": []
     },
     "InterestGroupScriptRunnerGlobalScope": {
@@ -2180,14 +2248,6 @@
       "inh": "",
       "impl": []
     },
-    "MLActivation": {
-      "inh": "",
-      "impl": []
-    },
-    "MLCommandEncoder": {
-      "inh": "",
-      "impl": []
-    },
     "MLContext": {
       "inh": "",
       "impl": []
@@ -2204,16 +2264,16 @@
       "inh": "",
       "impl": []
     },
+    "MLTensor": {
+      "inh": "",
+      "impl": []
+    },
     "Module": {
       "inh": "",
       "impl": []
     },
     "MouseEvent": {
       "inh": "UIEvent",
-      "impl": []
-    },
-    "MutationEvent": {
-      "inh": "Event",
       "impl": []
     },
     "MutationObserver": {
@@ -2328,6 +2388,18 @@
       "inh": "ExtendableEvent",
       "impl": []
     },
+    "NotRestoredReasonDetails": {
+      "inh": "",
+      "impl": []
+    },
+    "NotRestoredReasons": {
+      "inh": "",
+      "impl": []
+    },
+    "Observable": {
+      "inh": "",
+      "impl": []
+    },
     "OES_draw_buffers_indexed": {
       "inh": "",
       "impl": []
@@ -2401,6 +2473,10 @@
       "impl": []
     },
     "PageRevealEvent": {
+      "inh": "Event",
+      "impl": []
+    },
+    "PageSwapEvent": {
       "inh": "Event",
       "impl": []
     },
@@ -2584,6 +2660,14 @@
       "inh": "EventTarget",
       "impl": []
     },
+    "PreferenceManager": {
+      "inh": "",
+      "impl": []
+    },
+    "PreferenceObject": {
+      "inh": "EventTarget",
+      "impl": []
+    },
     "Presentation": {
       "inh": "",
       "impl": []
@@ -2624,6 +2708,10 @@
       "inh": "",
       "impl": []
     },
+    "PrivateAggregation": {
+      "inh": "",
+      "impl": []
+    },
     "ProcessingInstruction": {
       "inh": "CharacterData",
       "impl": []
@@ -2638,6 +2726,10 @@
     },
     "PromiseRejectionEvent": {
       "inh": "Event",
+      "impl": []
+    },
+    "ProtectedAudience": {
+      "inh": "",
       "impl": []
     },
     "ProximitySensor": {
@@ -2717,6 +2809,10 @@
       "impl": []
     },
     "ReadableStreamDefaultReader": {
+      "inh": "",
+      "impl": []
+    },
+    "RealTimeReporting": {
       "inh": "",
       "impl": []
     },
@@ -2809,6 +2905,10 @@
       "impl": []
     },
     "RTCIceCandidate": {
+      "inh": "",
+      "impl": []
+    },
+    "RTCIceCandidatePair": {
       "inh": "",
       "impl": []
     },
@@ -2984,16 +3084,24 @@
       "inh": "",
       "impl": []
     },
-    "SharedStorageOperation": {
+    "SharedStorageAppendMethod": {
+      "inh": "SharedStorageModifierMethod",
+      "impl": []
+    },
+    "SharedStorageClearMethod": {
+      "inh": "SharedStorageModifierMethod",
+      "impl": []
+    },
+    "SharedStorageDeleteMethod": {
+      "inh": "SharedStorageModifierMethod",
+      "impl": []
+    },
+    "SharedStorageModifierMethod": {
       "inh": "",
       "impl": []
     },
-    "SharedStorageRunOperation": {
-      "inh": "SharedStorageOperation",
-      "impl": []
-    },
-    "SharedStorageSelectURLOperation": {
-      "inh": "SharedStorageOperation",
+    "SharedStorageSetMethod": {
+      "inh": "SharedStorageModifierMethod",
       "impl": []
     },
     "SharedStorageWorklet": {
@@ -3002,6 +3110,10 @@
     },
     "SharedStorageWorkletGlobalScope": {
       "inh": "WorkletGlobalScope",
+      "impl": []
+    },
+    "SharedStorageWorkletNavigator": {
+      "inh": "",
       "impl": []
     },
     "SharedWorker": {
@@ -3016,28 +3128,12 @@
       "inh": "Event",
       "impl": []
     },
-    "SnapTargetArray": {
-      "inh": "",
-      "impl": []
-    },
-    "SnapTargetList": {
-      "inh": "",
-      "impl": []
-    },
     "SourceBuffer": {
       "inh": "EventTarget",
       "impl": []
     },
     "SourceBufferList": {
       "inh": "EventTarget",
-      "impl": []
-    },
-    "SpeechGrammar": {
-      "inh": "",
-      "impl": []
-    },
-    "SpeechGrammarList": {
-      "inh": "",
       "impl": []
     },
     "SpeechRecognition": {
@@ -3096,6 +3192,10 @@
       "inh": "",
       "impl": []
     },
+    "StorageAccessHandle": {
+      "inh": "",
+      "impl": []
+    },
     "StorageBucket": {
       "inh": "",
       "impl": []
@@ -3130,6 +3230,10 @@
     },
     "SubmitEvent": {
       "inh": "Event",
+      "impl": []
+    },
+    "Subscriber": {
+      "inh": "",
       "impl": []
     },
     "SubtleCrypto": {
@@ -3572,6 +3676,10 @@
       "inh": "",
       "impl": []
     },
+    "TextEvent": {
+      "inh": "UIEvent",
+      "impl": []
+    },
     "TextFormat": {
       "inh": "",
       "impl": []
@@ -3788,11 +3896,19 @@
       "inh": "EventTarget",
       "impl": []
     },
+    "Viewport": {
+      "inh": "",
+      "impl": []
+    },
     "ViewTimeline": {
       "inh": "ScrollTimeline",
       "impl": []
     },
     "ViewTransition": {
+      "inh": "",
+      "impl": []
+    },
+    "ViewTransitionTypeSet": {
       "inh": "",
       "impl": []
     },
@@ -4040,10 +4156,6 @@
       "inh": "Event",
       "impl": []
     },
-    "WindowSharedStorage": {
-      "inh": "SharedStorage",
-      "impl": []
-    },
     "Worker": {
       "inh": "EventTarget",
       "impl": []
@@ -4078,10 +4190,6 @@
     },
     "WorkletGroupEffect": {
       "inh": "",
-      "impl": []
-    },
-    "WorkletSharedStorage": {
-      "inh": "SharedStorage",
       "impl": []
     },
     "WritableStream": {

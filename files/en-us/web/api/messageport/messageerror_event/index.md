@@ -6,13 +6,11 @@ page-type: web-api-event
 browser-compat: api.MessagePort.messageerror_event
 ---
 
-{{APIRef("Channel Messaging API")}}
+{{APIRef("Channel Messaging API")}} {{AvailableInWorkers}}
 
 The **`messageerror`** event is fired on a {{domxref('MessagePort')}} object when it receives a message that can't be deserialized.
 
 This event is not cancellable and does not bubble.
-
-{{AvailableInWorkers}}
 
 ## Syntax
 
@@ -43,7 +41,7 @@ _This interface also inherits properties from its parent, {{domxref("Event")}}._
 - {{domxref("MessageEvent.source")}} {{ReadOnlyInline}}
   - : A `MessageEventSource` (which can be a {{glossary("WindowProxy")}}, {{domxref("MessagePort")}}, or {{domxref("ServiceWorker")}} object) representing the message emitter.
 - {{domxref("MessageEvent.ports")}} {{ReadOnlyInline}}
-  - : An array of {{domxref("MessagePort")}} objects representing the ports associated with the channel the message is being sent through (where appropriate, e.g. in channel messaging or when sending a message to a shared worker).
+  - : An array containing all {{domxref("MessagePort")}} objects sent with the message, in order.
 
 ## Examples
 

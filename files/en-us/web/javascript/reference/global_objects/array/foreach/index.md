@@ -10,7 +10,17 @@ browser-compat: javascript.builtins.Array.forEach
 The **`forEach()`** method of {{jsxref("Array")}} instances executes a provided function once
 for each array element.
 
-{{EmbedInteractiveExample("pages/js/array-foreach.html")}}
+{{InteractiveExample("JavaScript Demo: Array.forEach()")}}
+
+```js interactive-example
+const array1 = ["a", "b", "c"];
+
+array1.forEach((element) => console.log(element));
+
+// Expected output: "a"
+// Expected output: "b"
+// Expected output: "c"
+```
 
 ## Syntax
 
@@ -88,7 +98,8 @@ items.forEach((item) => {
 
 ### Printing the contents of an array
 
-> **Note:** In order to display the content of an array in the console,
+> [!NOTE]
+> In order to display the content of an array in the console,
 > you can use {{domxref("console/table_static", "console.table()")}}, which prints a formatted
 > version of the array.
 >
@@ -141,7 +152,8 @@ Since the `thisArg` parameter (`this`) is provided to
 `forEach()`, it is passed to `callback` each time it's
 invoked. The callback uses it as its `this` value.
 
-> **Note:** If passing the callback function used an
+> [!NOTE]
+> If passing the callback function used an
 > [arrow function expression](/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions),
 > the `thisArg` parameter could be omitted,
 > since all arrow functions lexically bind the {{jsxref("Operators/this", "this")}}

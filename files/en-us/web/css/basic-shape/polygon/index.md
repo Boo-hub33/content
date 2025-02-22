@@ -7,14 +7,13 @@ browser-compat: css.types.basic-shape.polygon
 
 {{CSSRef}}
 
-The **`polygon()`** [CSS](/en-US/docs/Web/CSS) function is one of the {{cssxref("&lt;basic-shape&gt;")}} [data types](/en-US/docs/Web/CSS/CSS_Types). It's used to draw a [polygon](https://en.wikipedia.org/wiki/Polygon) by providing one or more pairs of coordinates, each of which represents a vertex of the shape.
+The **`polygon()`** [CSS](/en-US/docs/Web/CSS) function is one of the {{cssxref("&lt;basic-shape&gt;")}} [data types](/en-US/docs/Web/CSS/CSS_Values_and_Units/CSS_data_types). It's used to draw a [polygon](https://en.wikipedia.org/wiki/Polygon) by providing one or more pairs of coordinates, each of which represents a vertex of the shape.
 
 {{EmbedInteractiveExample("pages/css/function-polygon.html")}}
 
 ## Syntax
 
 ```css-nolint
-
 /* Specified as coordinate list */
 /* polygon(<length-percentage> <length-percentage>, ... )*/
 polygon(50% 2.4%, 34.5% 33.8%, 0% 38.8%, 25% 63.1%, 19.1% 97.6%)
@@ -52,10 +51,11 @@ The `polygon()` function accepts comma-separated coordinates or points as its va
 <code>polygon(x<sub>1</sub> y<sub>1</sub>, x<sub>2</sub> y<sub>2</sub>, x<sub>3</sub> y<sub>3</sub>, x<sub>4</sub> y<sub>4</sub>, x<sub>n</sub> y<sub>n</sub>)</code>
 
 Given the above, mapping the coordinates of the container can be visualized as:
-| axis | point 1 | point 2 | point 3 | point 4 | point n |
+
+| axis | point 1 | point 2 | point 3 | point 4 | point n       |
 | ---- | ------- | ------- | ------- | ------- | ------------- |
-| x | 0% | 100% | 100% | 0% | x<sub>n</sub> |
-| y | 0% | 0% | 100% | 100% | y<sub>n</sub> |
+| x    | 0%      | 100%    | 100%    | 0%      | x<sub>n</sub> |
+| y    | 0%      | 0%      | 100%    | 100%    | y<sub>n</sub> |
 
 Applying those coordinates to the CSS {{cssxref("clip-path")}} property using the `polygon()` function:
 

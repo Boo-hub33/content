@@ -16,7 +16,8 @@ The visibility of the subject inside the scroller is tracked — by default, the
 `view-timeline` can contain two constituent values — a name for the named view progress timeline and an optional scroll axis value.
 The name is then referenced in an [`animation-timeline`](/en-US/docs/Web/CSS/animation-timeline) declaration to indicate the element that will be animated as the timeline progresses. This can be the subject element, but it doesn't have to be — you can animate a different element as the subject moves through the scrolling area.
 
-> **Note:** If the scroller does not overflow its container in the axis dimension or if the overflow is hidden or clipped, no timeline will be created.
+> [!NOTE]
+> If the scroller does not overflow its container in the axis dimension or if the overflow is hidden or clipped, no timeline will be created.
 
 ## Constituent properties
 
@@ -164,7 +165,7 @@ Last, an animation is specified on the element that animates its opacity and sca
   }
 
   to {
-    opacity: 1,
+    opacity: 1;
     transform: scaleX(1);
   }
 }
