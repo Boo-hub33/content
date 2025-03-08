@@ -2,29 +2,32 @@
 title: FileSystemObserver
 slug: Web/API/FileSystemObserver
 page-type: web-api-interface
+status:
+  - experimental
+  - non-standard
 browser-compat: api.FileSystemObserver
 ---
 
-{{securecontext_header}}{{APIRef("File System API")}}
+{{securecontext_header}}{{APIRef("File System API")}}{{SeeCompatTable}}{{non-standard_header}}
 
 The **`FileSystemObserver`** interface of the {{domxref("File System API", "File System API", "", "nocode")}} provides a mechanism to observe changes to the user-observable file system and the [Origin Private File System](/en-US/docs/Web/API/File_System_API/Origin_private_file_system) (OPFS). This means web applications don't have to poll the file system to find changes in the files or folder structure, which can be time-consuming and wasteful.
 
 ## Constructor
 
-- {{domxref("FileSystemObserver.FileSystemObserver", "FileSystemObserver()")}} {{Experimental_Inline}}
+- {{domxref("FileSystemObserver.FileSystemObserver", "FileSystemObserver()")}} {{Experimental_Inline}} {{non-standard_inline}}
   - : Creates a new `FileSystemObserver` object instance.
 
 ## Instance methods
 
-- {{domxref("FileSystemObserver.disconnect", "disconnect()")}} {{Experimental_Inline}}
+- {{domxref("FileSystemObserver.disconnect", "disconnect()")}} {{Experimental_Inline}} {{non-standard_inline}}
   - : Stop observing the filesystem.
-- {{domxref("FileSystemObserver.observe", "observe()")}} {{Experimental_Inline}}
+- {{domxref("FileSystemObserver.observe", "observe()")}} {{Experimental_Inline}} {{non-standard_inline}}
   - : Start observing changes to a given file or directory.
 
 ## Examples
 
 > [!NOTE]
-> For a complete working example, check out [File System Observer Demo](https://file-system-observer.glitch.me/) ([source code](https://glitch.com/edit/#!/file-system-observer)).
+> For a complete working example, check out [File System Observer Demo](https://mdn.github.io/dom-examples/filesystemobserver/) ([source code](https://github.com/mdn/dom-examples/tree/main/filesystemobserver)).
 
 ### Initialize a `FileSystemObserver`
 

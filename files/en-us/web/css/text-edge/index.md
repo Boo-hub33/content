@@ -7,7 +7,7 @@ browser-compat: css.types.text-edge
 
 {{CSSRef}}
 
-The **`<text-edge>`** {{glossary("enumerated")}} [data type](/en-US/docs/Web/CSS/CSS_Types) defines keywords that specify font metrics representing specific regions on a font's block-start edge and block-end edge. Each keyword specifies a position of a font's over and/or under edge.
+The **`<text-edge>`** {{glossary("enumerated")}} [data type](/en-US/docs/Web/CSS/CSS_Values_and_Units/CSS_data_types) defines keywords that specify font metrics representing specific regions on a font's block-start edge and block-end edge. Each keyword specifies a position of a font's over and/or under edge.
 
 The `<text-edge>` values are used in the {{cssxref("text-box-edge")}} property to specify an amount of space to trim from the block-start and block-end edge of a text element's block container.
 
@@ -33,7 +33,7 @@ The `<text-edge>` data type is composed of one or two keywords representing spec
 
 - `text`
 
-  - : The font's over and under edges are its text-over baseline/text-under baseline: this includes the font's ascenders and decenders but excludes the [half-leading](/en-US/docs/Glossary/Leading) set on the text.
+  - : The font's over and under edges are its text-over baseline/text-under baseline: this includes the font's ascenders and descenders but excludes the [half-leading](/en-US/docs/Glossary/Leading) set on the text.
 
     > [!NOTE]
     > The amount of half-leading included on a text element can be controlled using the {{cssxref("line-height")}} property.

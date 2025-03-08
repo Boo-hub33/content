@@ -370,7 +370,8 @@
                 "landing-page",
                 "webdriver-command",
                 "webdriver-capability",
-                "webdriver-error"
+                "webdriver-error",
+                "reference"
               ]
             }
           }
@@ -473,7 +474,7 @@
           "properties": {
             "slug": {
               "type": "string",
-              "pattern": "^Web/Accessibility/ARIA/Attributes/"
+              "pattern": "^Web/Accessibility/ARIA/Reference/Attributes/"
             }
           }
         },
@@ -487,7 +488,7 @@
           "properties": {
             "slug": {
               "type": "string",
-              "pattern": "^Web/Accessibility/ARIA/Roles/"
+              "pattern": "^Web/Accessibility/ARIA/Reference/Roles/"
             }
           }
         },
